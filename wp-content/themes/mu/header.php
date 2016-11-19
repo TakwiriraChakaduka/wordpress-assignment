@@ -25,24 +25,14 @@
 	<div class="header-area full">
 		<div class="main-page">
 			<header id="masthead" class="site-header inner" role="banner">
-				<div class="site-branding">
-					<?php
-					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php
-					endif;
 
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-					<?php
-					endif; ?>
-				</div><!-- .site-branding -->
+				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				</a>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mu' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'mu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

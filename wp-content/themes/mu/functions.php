@@ -114,6 +114,18 @@ function mu_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mu_scripts' );
 
+function load_fonts() {
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+            wp_enqueue_style( 'googleFonts');
+        }
+
+add_action('wp_print_styles', 'load_fonts');
+
+function enqueue_fa(){
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+}
+
+add_action('wp_enqueue_scripts','enqueue_fa');
 /**
  * Implement the Custom Header feature.
  */
