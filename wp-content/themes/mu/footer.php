@@ -19,9 +19,8 @@
     <div class="main-page">
     	<footer id="colophon" class="site-footer inner" role="contentinfo">
     		<div class="site-info">
-    			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mu' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mu' ), 'WordPress' ); ?></a>
-    			<span class="sep"> | </span>
-    			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mu' ), 'mu', '<a href="https://github.com/TakwiriraChakaduka" rel="designer">Shingirai Chakaduka</a>' ); ?>
+    			<p  class="pull-left"><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mu' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mu' ), 'WordPress' ); ?></a></p>
+    			<p class="pull-right"><?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mu' ), 'mu', '<a href="https://github.com/TakwiriraChakaduka" rel="designer">Shingirai Chakaduka</a>' ); ?></p>
     		</div><!-- .site-info -->
     	</footer><!-- #colophon -->
     </div>

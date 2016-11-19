@@ -248,7 +248,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Playfair Display";
+	font-family: "Playfair Display", Helvetica, sans-serif;
 	clear: both;
 }
 
@@ -484,10 +484,6 @@ a {
 	color: #E6B098;
 }
 
-a:visited {
-	color: purple;
-}
-
 a:hover,
 a:focus,
 a:active {
@@ -508,16 +504,15 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	display: inline-block;
+	font-family: "Playfair Display", Helvetica, sans-serif;
 }
 
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
 	padding-left: 0;
+	margin: 0;
 }
 
 .main-navigation li {
@@ -528,9 +523,12 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	padding: 0 10px;
+	font-size: 14px;
 }
 
 .main-navigation ul ul {
+	background: #723147;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -593,6 +591,11 @@ a:active {
 	.main-navigation ul {
 		display: block;
 	}
+}
+
+.menu-toggle {
+	color: #FFF;
+	cursor: pointer;
 }
 
 .site-main .comment-navigation,
@@ -866,8 +869,18 @@ object {
 /*--------------------------------------------------------------
 ## Custom Styles
 --------------------------------------------------------------*/
+#header-image {
+	max-width: 100px;
+	margin: 0 auto;
+}
+
+#header-image a img {
+	display: block;
+	margin: 0 auto;
+}
+
 .main-page {
-	max-width: 1040px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -877,16 +890,16 @@ object {
 
 #primary
 {
-	width:66.5%;
-	padding-right: 50px;
-	float:left;
+	width:100%;
+	padding-right: 0 50px;
+	text-align: center;
 }
 
-#secondary
+/*#secondary
 {
 	width:33.5%;
 	float:left;
-}
+}*/
 
 .home-link {
 	text-decoration: none;
@@ -909,6 +922,24 @@ object {
 
 .footer-area {
 	background-color: #31152B;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left:after, .pull-right:after {
+	content:'';
+  display:block;
+  clear: both;
+}
+
+footer p {
+	color: #FFF;
 }
 /*--------------------------------------------------------------
 ## Media Queries

@@ -25,17 +25,23 @@
 	<div class="header-area full">
 		<div class="main-page">
 			<header id="masthead" class="site-header inner" role="banner">
-
+				<div id="header-image">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/1.png" alt="Logo" width="86" height="83" />
+					</a>
+				</div>
 				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</a>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="menu-toggle"><i class="fa fa-bars"></i></div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'mu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
+				</nav>
+
+			</header>
 		</div>
 	</div>
 

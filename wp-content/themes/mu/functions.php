@@ -76,7 +76,7 @@ add_action( 'after_setup_theme', 'mu_setup' );
  * @global int $content_width
  */
 function mu_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'mu_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'mu_content_width', 900 );
 }
 add_action( 'after_setup_theme', 'mu_content_width', 0 );
 
