@@ -3,45 +3,15 @@ Theme Name: MusicUnites
 Theme URI: http://underscores.me/
 Author: Shingirai Chakaduka
 Author URI: https://github.com/TakwiriraChakaduka
-Description: A customized wordpress starter theme
+Description: A wordpress starter theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mu
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 
 MusicUnites is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Normalize
@@ -346,12 +316,12 @@ html {
 
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after {
 	box-sizing: inherit;
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #fff;
 }
 
 blockquote:before,
@@ -401,12 +371,12 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	max-width: 100%;
 }
 
 figure {
-	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+	margin: 1em 0;
 }
 
 table {
@@ -675,10 +645,9 @@ a:active {
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+	z-index: 100000;
 }
 
-/* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
@@ -741,7 +710,6 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-/* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
 }
@@ -795,13 +763,11 @@ a:active {
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
 	display: none;
 }
 
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 	display: block;
 }
@@ -818,7 +784,6 @@ a:active {
 	padding: 0;
 }
 
-/* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
@@ -896,3 +861,54 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+## Custom Styles
+--------------------------------------------------------------*/
+.main-page {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+.inner {
+	padding: 2em 0;
+}
+
+#primary
+{
+	width:66.5%;
+	padding-right: 50px;
+	float:left;
+}
+
+#secondary
+{
+	width:33.5%;
+	float:left;
+}
+
+/*--------------------------------------------------------------
+## Media Queries
+--------------------------------------------------------------*/
+@media screen and (max-width: 800px) {
+	.menu-toggle {
+		display: block;
+	}
+	.main-navigation ul {
+		display: none;
+	}
+
+	#primary,
+	#secondary {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	.inner {
+		padding: 0 20px;
+	}
+}
+
