@@ -974,6 +974,21 @@ background-color: #FFF;
 border-radius: 10px;
 }
 
+.footer-widget h2 {
+	text-align: center;
+}
+
+.footer-widget ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.children {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+}
+
 .site-info {
 	display: inline-block;
   width: 100%;
