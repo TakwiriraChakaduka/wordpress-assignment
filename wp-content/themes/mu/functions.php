@@ -104,6 +104,10 @@ add_action( 'widgets_init', 'mu_widgets_init' );
 function mu_scripts() {
 	wp_enqueue_style( 'mu-style', get_stylesheet_uri() );
 
+	if (is_page_template('page-templates/page-home.php')) {
+		wp_enqueue_style( 'mu-homepage-style' , get_template_directory_uri() . '/layouts/content.css');
+	}
+
 	wp_enqueue_script( 'mu-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'mu-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -114,6 +118,7 @@ function mu_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mu_scripts' );
 
+//Add Google Fonts
 function load_fonts() {
             wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
             wp_enqueue_style( 'googleFonts');
@@ -121,11 +126,17 @@ function load_fonts() {
 
 add_action('wp_print_styles', 'load_fonts');
 
+//Add Font-Awesome
 function enqueue_fa(){
 	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 }
 
 add_action('wp_enqueue_scripts','enqueue_fa');
+
+//Removing extra p & br tags on upload from editor
+remove_filter( 'the_content', 'wpautop' );
+
+remove_filter( 'the_excerpt', 'wpautop' );
 /**
  * Implement the Custom Header feature.
  */

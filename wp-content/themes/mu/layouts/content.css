@@ -1,0 +1,31 @@
+/*
+ * Theme Name: MusicUnites
+ *
+ * Layout: Content-Sidebar
+ *
+ * Learn more: https://developer.wordpress.org/themes/basics/template-files/
+*/
+
+/*Floating the images added through the editor & adding margin */
+
+.main-page {
+  max-width: 100%;
+}
+
+.center {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.image-container {
+  float: left;
+  margin: 0 10px;
+}
+/*img {
+  float: left;
+  margin: 0 10px;
+}*/
+.site-footer {
+	clear: both;
+	width: 100%;
+}

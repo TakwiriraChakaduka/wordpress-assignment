@@ -869,6 +869,8 @@ object {
 /*--------------------------------------------------------------
 ## Custom Styles
 --------------------------------------------------------------*/
+
+/* Page layout*/
 #header-image {
 	max-width: 100px;
 	margin: 0 auto;
@@ -901,6 +903,7 @@ object {
 	float:left;
 }*/
 
+/*Header styling*/
 .home-link {
 	text-decoration: none;
 }
@@ -920,9 +923,20 @@ object {
 	text-align: center;
 }
 
+/* Footer styling*/
+.site-footer {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
 .footer-area {
 	background-color: #31152B;
 }
+
+footer p {
+	color: #FFF;
+}
+/*Floats & clearfix*/
 
 .pull-left {
 	float: left;
@@ -938,9 +952,6 @@ object {
   clear: both;
 }
 
-footer p {
-	color: #FFF;
-}
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
