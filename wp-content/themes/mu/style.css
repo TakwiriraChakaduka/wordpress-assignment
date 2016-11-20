@@ -938,15 +938,15 @@ object {
 	background-color: #31152B;
 }
 
-footer p {
+.footer-area p {
 	color: #FFF;
 }
 
-footer a {
+.footer-area a {
 	color:	#E6B098;
 }
 
-footer a:hover {
+.footer-area a:hover {
 	color: #CC4452;
 }
 /*Floats & clearfix*/
@@ -974,7 +974,10 @@ background-color: #FFF;
 border-radius: 10px;
 }
 
-.footer-widget
+.site-info {
+	display: inline-block;
+  width: 100%;
+}
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
