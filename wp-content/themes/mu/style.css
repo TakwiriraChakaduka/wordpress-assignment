@@ -952,6 +952,37 @@ footer p {
   clear: both;
 }
 
+#footer-widgets {
+display: block;
+width:960px;
+margin-right:0;
+background: #ffffff;
+}
+
+#footer-widget1 {
+width: 260px;
+float: left;
+margin: 15px 10px 10px 30px;
+padding: 10px;
+background-color: #ffffff;
+}
+
+#footer-widget2 {
+width: 260px;
+float: left;
+margin: 15px 10px 10px 15px;
+padding: 10px;
+background-color: #ffffff;
+}
+
+#footer-widget3 {
+width: 260px;
+float: left;
+margin: 15px 10px 10px 15px;
+padding: 10px;
+background-color: #ffffff;
+}
+
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
