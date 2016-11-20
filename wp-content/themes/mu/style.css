@@ -983,6 +983,10 @@ border-radius: 10px;
 	margin: 0;
 }
 
+.footer-widget a {
+	color: #731630;
+}
+
 .children {
 	list-style-type: none;
 	margin: 0;
