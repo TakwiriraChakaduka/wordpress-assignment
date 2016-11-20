@@ -481,7 +481,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #E6B098;
+	color: #731630;
 }
 
 a:hover,
@@ -525,6 +525,11 @@ a:active {
 	text-decoration: none;
 	padding: 0 10px;
 	font-size: 14px;
+	color: #E6B098;
+}
+
+.main-navigation a:hover {
+	color: #CC4452;
 }
 
 .main-navigation ul ul {
@@ -936,6 +941,14 @@ object {
 footer p {
 	color: #FFF;
 }
+
+footer a {
+	color:	#E6B098;
+}
+
+footer a:hover {
+	color: #CC4452;
+}
 /*Floats & clearfix*/
 
 .pull-left {
@@ -952,37 +965,16 @@ footer p {
   clear: both;
 }
 
-#footer-widgets {
-display: block;
-width:960px;
-margin-right:0;
-background: #ffffff;
-}
-
-#footer-widget1 {
+.footer-widget {
 width: 260px;
 float: left;
 margin: 15px 10px 10px 30px;
 padding: 10px;
-background-color: #ffffff;
+background-color: #FFF;
+border-radius: 10px;
 }
 
-#footer-widget2 {
-width: 260px;
-float: left;
-margin: 15px 10px 10px 15px;
-padding: 10px;
-background-color: #ffffff;
-}
-
-#footer-widget3 {
-width: 260px;
-float: left;
-margin: 15px 10px 10px 15px;
-padding: 10px;
-background-color: #ffffff;
-}
-
+.footer-widget
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
