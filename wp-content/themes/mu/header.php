@@ -27,13 +27,12 @@
 			<header id="masthead" class="site-header inner" role="banner">
 				<div id="header-image">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/1.png" alt="Logo" width="86" height="83" />
+		<!--			<img src="<?php echo get_template_directory_uri(); ?>/images/1.png" alt="Logo" width="86" height="83" />-->
 					</a>
 				</div>
 				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</a>
+					<p class="site-description" color="background-color:#fff"><a href="http://139.59.225.214/join-our-orchestra/">Sign up on our website to join the Orchestra</a></p>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="menu-toggle"><i class="fa fa-bars"></i></div>
